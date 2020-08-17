@@ -16,8 +16,8 @@ class TodoItems extends Component{
         var todoEntries = this.props.entries;
 // Mapped the Entries & Turned it into a list item
         var listItems  = todoEntries.map((item)=>{
-            return <li onClick={()=> this.delete(item.key)}
-            key={item.key}>{item.text}</li>
+            return <div className="todoDiv" onClick={()=> this.delete(item.key)}
+            key={item.key}>{item.text}</div>
         });
 
 

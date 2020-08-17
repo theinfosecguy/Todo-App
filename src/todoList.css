@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 .todoList{
 
@@ -10,7 +12,7 @@
 .textField{
     margin: 10px;
     padding: 10px;
-    background-color: #12cad6;
+    background-color: #52575d;
     border: none;
     height: 60px;
     width: 25%;
@@ -25,17 +27,39 @@
 }
 
 button {
-    background-color: #65cbd6;
+    background-color: #3d4146;
     border-radius: 5px;
     cursor: pointer;
     height: 60px;
     width: 10%;
-    border: none;
+    border: 1px solid white;
     color: white;
     font-size: 1.2rem;
+    transition: background-color .2s ease-in-out;
 }
 
 button:hover{
-    background-color: turquoise;
+    background-color: white;
+    color: #52575d;
 }
 
+.todoDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 30%;
+    background-color: #363a3f;
+    border: 1px solid grey;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: background-color .4s ease-in-out;
+}
+
+.todoDiv:hover{
+    background-color: #d54062;
+}
